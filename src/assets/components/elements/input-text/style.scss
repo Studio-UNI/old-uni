@@ -1,0 +1,20 @@
+
+.input--text{
+    position:relative;
+    >label{
+        position:absolute;
+        top:$s-xl*1.2;
+        transition:$quick-transition;
+        &.label--up{
+            top:$s-m;
+            color:$grey;
+            font-size: $font-size-xxs;
+            line-height:$line-height-xxs;
+            font-weight:100;
+        }
+    }
+    >input{
+        margin-top:$s-xl;
+        transition:$main-transition;
+    }
+}

@@ -1,0 +1,16 @@
+.mainNav{
+        &__bg{
+            >div:first-child{
+                width: calc(100%/3 *2);
+            }
+            >div:last-child{
+                width: calc(100%/3);
+            }
+        }
+        &__lastProject{
+            width: calc(100%/3 *2);
+        }
+        &__navigation{
+            width: calc(100%/3);
+        }
+    }

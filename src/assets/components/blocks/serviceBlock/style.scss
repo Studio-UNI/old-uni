@@ -1,0 +1,196 @@
+.container {
+  margin: 0 auto;
+}
+
+.presentationServiceBlock {
+  background: linear-gradient(#F5F5F5, #EFEFEF);
+  padding-bottom: 50px;
+  .page-title {
+    padding-top: 100px;
+    .title-orange {
+      text-transform: uppercase;
+      color: $main-color;
+      text-align: center;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 54px;
+        height: 3px;
+        margin-left: -70px;
+        margin-top: 10px;
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+.servicesBlock {
+  .row {
+    margin: 40px 20px;
+  }
+  .hr {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.services-work {
+  background-color: $lightgrey;
+  padding-bottom: 50px;
+  .services-work__image {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .container {
+    h2 {
+      margin-top: 50px;
+    }
+  }
+}
+
+// ============================ SLIDER ================================= //
+.cardSliderContainer {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.images-slider {
+  width: calc(((54vw + 40px) * 5) + 25vw);
+  .card {
+    display: inline-block;
+    box-shadow: $shadow-s;
+    border-radius: 6px;
+    margin: 20px;
+    width: 54vw;
+    &:first-child {
+      margin-left: 25vw;
+    }
+    .wrapper {
+      background: url("https://picsum.photos/400/600/?random") no-repeat 20% 20%;
+      color: white;
+      height: calc(54vw * 1.59);
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+    .card-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: $black;
+      border-radius: 0 0 6px 6px;
+      transform: translateY(0);
+      h3 {
+        text-align: center;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.slider-content {
+  margin-top: 50px;
+  opacity: 0;
+  display: none;
+  // transform: translateX(100px);
+  transition: opacity 0.6s;
+  h1 {
+    font-size: 200%;
+    line-height: normal;
+  }
+  span {
+    font-size: 600%;
+    font-weight: bold;
+    position: absolute;
+    z-index: -1;
+    color: $lightgrey;
+    margin-top: -70px;
+    // transform: translateX(-40px);
+    transition: opacity 0.6s;
+
+  }
+  &.active {
+    opacity: 1;
+    display: block;
+    // transform: translateX(0);
+    /*span {
+      opacity: 1;
+      transform: translateX(-20px);
+    }*/
+  }
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  margin-top: 50px;
+  .range {
+    cursor: move;
+    position: absolute;
+    background-color: $main-color;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: $shadow-xs;
+    margin-top: -26px;
+    text-align: center;
+    line-height: 55px;
+    color: $white;
+    .step {
+      font-size: 150%;
+      font-weight: bold;
+    }
+  }
+  #tip {
+    position: absolute;
+    color: $white;
+    font-size: 150%;
+    font-weight: bold;
+    margin-left: 18px;
+    margin-top: -19px;
+  }
+  .range-line {
+    width: 90%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: $grey;
+    z-index: -1;
+  }
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 3px; /* Specified height */
+  background: $grey; /* Grey background */
+  outline: none; /* Remove outline */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: $main-color; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: $shadow-xs;
+
+}
+
+// =================================================================== //
+

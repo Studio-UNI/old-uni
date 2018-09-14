@@ -1,0 +1,39 @@
+.logoUni{
+    height: 32px;
+    display:inline-flex;
+    align-items:center;
+    &:hover{
+        text-decoration:none;
+    }
+    svg{
+        height: 32px;
+        width: 32px;
+    }
+    ellipse{
+        fill: $main-color;
+    }
+    path{
+        fill: $black;
+    }
+    
+    // Logo
+    &__logo{
+        margin-right:$s-m;
+    }
+    
+    // Title 
+    
+    &__title{
+        >h2{
+            margin-bottom:0;
+            margin-top:$s-xs;
+            @extend %type-s;
+            font-family:$main-font-family;
+            user-select: none;
+            transform:translateX(0);
+            opacity:1;
+            transition:$main-transition;
+        }
+    }
+    
+}

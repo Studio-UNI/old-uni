@@ -1,0 +1,24 @@
+.footer{
+    &__navigation{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            margin-right:$s-m;
+        }
+    }
+    &__legals{
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        margin-bottom:$s-m;
+    }
+    &__copyright{
+        display:flex;
+        justify-content: center;
+        color:$grey;
+        font-size: $font-size-xs;
+        line-height:$line-height-xs;
+        font-weight:400;
+    }
+}

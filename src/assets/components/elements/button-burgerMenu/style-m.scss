@@ -1,0 +1,10 @@
+    .burgerMenu{
+        height: $s-xxl;
+        width: $s-xxl;
+        >div{
+            height: 4px;
+        }
+        >div:nth-child(1){
+            margin-bottom: $s-xs*1.5;
+        }
+    }

@@ -1,0 +1,36 @@
+// BurgerMenu 
+
+.burgerMenu{
+    height: $s-xl;
+    width: $s-xl;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    justify-content:center;
+    >div{
+        height:3px;
+        background: $black;
+        transition:$quick-transition;
+    }
+    >div:nth-child(1){
+        margin-bottom: $s-xs;
+        width: 80%;
+    }
+    >div:nth-child(2){
+        width: 50%;
+    }
+    >span{
+        color:$white;
+        display:none;
+        user-select: none;
+    }
+    &:hover{
+        >div{
+            background: $main-color;
+        }
+    }
+    
+    // Lorsqu'on survole le burger, fait bouger les partie de celui-ci
+    // À devv
+}

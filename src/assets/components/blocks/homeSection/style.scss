@@ -1,0 +1,12 @@
+.homeSection{
+  background: $lightgrey;
+  padding: $s-xxl*2 0 94px 0;
+  .bigTitle{
+    color: white;
+    opacity:.4;
+    margin-top:7vh;
+  }
+  .dashInfo{
+    margin-bottom:$s-xl;
+  }
+}

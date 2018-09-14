@@ -1,0 +1,19 @@
+    .footer{
+        padding-top:$s-xxl;
+        &__navigation{
+            justify-content:left;
+        }
+        &__legals{
+            flex-direction: row;
+            justify-content: flex-end;
+            a{
+                margin-right:$s-m;
+            }
+            a:last-child{
+                margin-right:0;
+            }
+        }
+        &__copyright{
+            justify-content: flex-end;
+        }
+    }  

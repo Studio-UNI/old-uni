@@ -1,0 +1,17 @@
+.CTABlock{
+    padding: $s-xxl 0;
+    &__startProject{
+        text-align:center;
+    }
+    &__contact{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        >p{
+            margin-bottom:$s-xxl;
+        }
+        >a{
+            align-self:flex-end;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.homeTeamSection{
+  >.row--full{
+    grid-template-columns: 1fr 1fr;
+    >div:nth-child(1){
+      grid-column: 2 / 3;
+    }
+
+    >div:nth-child(2){
+      grid-column: 1 / 2;
+      grid-row:1;
+      >*{
+        max-width:500px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,51 @@
+.img{
+    overflow: hidden;
+    width: 100vw;
+    margin-left: -$s-m;
+    img{
+        width: 100%;
+    }
+    figcaption{
+        margin-top:$s-s;
+        text-align:center;
+        color:$grey;
+        font-style:oblique;
+    }
+}
+
+
+.logoList{
+    margin:$s-l 0;
+    opacity:.6;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    >img{
+        width:calc(25% - 12px);
+        margin-right:$s-m;
+        height:auto;
+    }
+    >img:nth-child(2){
+        width:calc(30% - 12px);
+    }
+    >img:last-child{
+        margin-right:0;
+    }
+    
+    // Greyscale 
+
+    &--greyscale{
+        filter: grayscale(100%);
+    }
+}
+
+.img--full{
+    overflow:hidden;
+    >img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+}

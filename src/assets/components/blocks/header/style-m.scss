@@ -1,0 +1,73 @@
+.header{
+        padding:$s-xl $s-l $s-m $s-l;
+        background: transparent;
+        
+        &--navOpen{
+            .menu{
+                .burgerMenu{
+                    >div:nth-child(1){
+                        transform:rotate(45deg) translate3d(0px, 6px,0px);
+                    }
+                    >div:nth-child(2){
+                        transform:rotate(-45deg) translate3d(1px, -7px,0px);
+                    }
+                }
+                a{
+                    opacity:0;
+                    visibility:hidden;
+                    user-select: none;
+                }
+                a:nth-child(1){
+                    transform:translateX(20px);
+                }
+                a:nth-child(2){
+                    transform:translateX(20px);
+                }
+                a:nth-child(3){
+                    transform:translateX(20px);
+                }
+            }
+        }
+        
+         &--hidden{
+            >.logoUni{
+                opacity:.8;
+                ellipse{
+                    fill:$black;
+                }
+                &:hover{
+                    opacity:1;
+                    ellipse{
+                        fill:$main-color;
+                    }
+                }
+                h2{
+                    transform:translateX(-20px);
+                    opacity:0;
+                }
+            }
+            .menu{
+                .burgerMenu{
+                    opacity:.8;
+                    &:hover{
+                        opacity:1;
+                    }
+                }
+                a{
+                    opacity:0;
+                    visibility:hidden;
+                    user-select: none;
+                }
+                a:nth-child(1){
+                    transform:translateX(20px);
+                }
+                a:nth-child(2){
+                    transform:translateX(20px);
+                }
+                a:nth-child(3){
+                    transform:translateX(20px);
+                }
+            }
+        }
+        
+    }

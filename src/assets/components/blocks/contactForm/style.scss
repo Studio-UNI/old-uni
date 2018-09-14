@@ -1,0 +1,19 @@
+.container--button--form{
+    margin-top:$s-xxl;
+    margin-bottom: $s-m;
+}
+
+.block.block--contact{
+    margin-top:$s-xxl*2;
+}
+
+.contact--infos{
+    margin-bottom:$s-l;
+    >h1{
+        margin-bottom:$s-s;
+    }
+}
+
+form.form--contact{
+    max-width:450px;
+}

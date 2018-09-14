@@ -1,0 +1,9 @@
+    .input.input--textarea{
+        >label{
+            &.label--up{
+                font-size: $font-size-xs;
+                line-height:$line-height-xs;
+                font-weight:100;
+            }
+        }
+    }

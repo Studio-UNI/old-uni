@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Studio Web UNI, spécialiste de l'expérience client ligne.">
+    <meta name="theme-color" content="#F26724">
+    <link rel="manifest" href="manifest.json">
+    <title>Studio Web UNI</title>     
+    <link rel="preload" href="dist/assets/css/style.css" as="style">
+    <link rel='preload' media='screen and (min-width: 375px)' href='dist/assets/css/style-s.css' as="style"/>
+    <link rel='preload' media='screen and (min-width: 599px)' href='dist/assets/css/style-m.css' as="style"/>
+    <link rel='preload' media='screen and (min-width: 899px)' href='dist/assets/css/style-l.css' as="style"/>
+    <link rel='preload' media='screen and (min-width: 1199px)' href='dist/assets/css/style-xl.css' as="style"/>
+    <link rel='preload' media='screen and (min-width: 1699px)' href='dist/assets/css/style-xxl.css' as="style"/>
+    <style>
+        
+        :root{
+            --orange: #f1621f;
+            --black: #1e1e1e;
+        }
+    
+        .attente{
+            width:100%;
+            padding:18px;
+            margin-top:18px;
+        }
+        .attente > div:first-child{
+            display:flex;
+            width:100%;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+        }
+        .attente > div:first-child > div svg{
+            height: 48px;  
+        }
+        .attente > div:first-child > div svg ellipse{
+            fill: var(--orange);
+        }
+        .attente > div:first-child > div svg path{
+            fill: var(--black);
+        }
+        .attente > div:first-child h1{
+            line-height:32px;
+            margin:0;
+            padding-left:8px;
+            font-family:"Gotham-Book", sans-serif;
+        }
+        .attente > div:nth-child(2){
+            text-align: center;
+            padding-top:48px
+        }
+        .attente > div:nth-child(2) > p:nth-child(2){
+            font-family:"Gotham-Bold", sans-serif;
+            margin-top:48px;
+        }
+        
+        @media screen and (min-width:599px){
+            .attente{
+                width:400px;
+                padding:48px;
+                margin-top:calc(20vh);
+                margin-left:calc(50vw - 200px);
+            }
+            .attente > div:first-child{
+                display:flex;
+                width:100%;
+            }
+            .attente p{
+                font-size:14px;
+                line-height:18px
+            }
+        }
+    </style>
+</head>
+    <body>
+        <section>
+            <div class="attente">
+                <div>
+                    <div>
+                        <svg viewBox="0 0 64.5 52.1">
+                            <ellipse class="st0" cx="56.5" cy="7" rx="5.8" ry="5.6"/>
+                            <path class="st1" d="M51.8,16.3V32L35.4,16.3h-8.1v16.5c0,4.1-3.2,7.5-7.2,7.5s-7.2-3.4-7.2-7.5V16.3H2.7v16.1
+                                        c0,9.9,7.8,18,17.3,18c10.1,0,17.1-8.7,17.3-16.9l16.5,15.2h8.1V16.3H51.8z"/>
+                        </svg>
+                    </div>
+                    <div><h1>Studio Web</h1></div>
+                </div>
+                <div>
+                    <p>Notre site Internet est en développement. <br>Très bientôt vous y découvrirez nos domaines de compétences associés à nos réalisations digitales.</p>
+                    <p>Vous souhaiter débuter un projet Web ?</p>
+                    <a href="mailto:remi@studio-uni.fr" class="button button--CTA button--CTA--icon">
+                        <span>Contactez-nous</span>
+                        <div>
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="11.46 16.89 15.64 9.62 8.7 14.64 1.01 11.08 21.85 1.41 15.95 23.62 11.46 16.89"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container--contactShapes">
+               <!-- U -->
+                <div class="container--contactShapes__shape container--contactShapes__shape--grey">
+                    <svg viewBox="0 0 33.15 65.27">
+                          <path d="M33.15,45.86c-7.59,0-13.76-6.43-13.76-14.33V0H0V30.76c0,19,14.87,34.51,33.15,34.51Z"/>
+                    </svg>
+                </div>
+                <!-- point -->
+                <div class="container--contactShapes__shape container--contactShapes__shape--orange">
+                    <svg viewBox="0 0 50.74 48.79">
+                        <ellipse cx="25.37" cy="24.4" rx="25.37" ry="24.4"/>
+                    </svg>
+                </div>
+                
+                <div class="container--contactShapes__shape container--contactShapes__shape--orange">
+                    <svg viewBox="0 0 50.74 48.79">
+                        <ellipse cx="25.37" cy="24.4" rx="25.37" ry="24.4"/>
+                    </svg>
+                </div>
+
+                <!-- N -->
+                <div class="container--contactShapes__shape container--contactShapes__shape--grey">
+                    <svg viewBox="0 0 63.71 59.49">
+                        <polygon class="cls-1" points="45.17 0 45.17 28.85 14.94 0 0 0 0.13 59.48 18.68 59.48 18.53 31.65 48.75 59.48 63.71 59.48 63.71 0 45.17 0"/>
+                    </svg>
+                </div>
+                <!-- I -->
+                <div class="container--contactShapes__shape  container--contactShapes__shape--grey">
+                    <svg viewBox="0 0 18.54 59.49">
+                        <rect class="cls-1" width="18.54" height="59.49"/>
+                    </svg>
+                </div>
+                
+                <!-- point -->
+                <div class="container--contactShapes__shape container--contactShapes__shape--orange">
+                    <svg viewBox="0 0 50.74 48.79">
+                        <ellipse cx="25.37" cy="24.4" rx="25.37" ry="24.4"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        /****************
+                                			Après le charchement de la page, on cherche tous les styles préchargés et on les transforme en style valide 
+                                		****************/
+        document.querySelectorAll('[rel="preload"][as="style"]').forEach(function(e) {
+            var s = document.createElement('link');
+            s.rel = "stylesheet";
+            s.href = e.href;
+            document.head.appendChild(s);
+        });
+        /****************/
+
+        /****************
+        	Faire que ça marche hors ligne.
+        ****************/
+        /* 
+        	Ceci n'est utile que pour tester si ça fonctionne, sinon autant utiliser ce qui n'est pas en commentaire.
+        */
+
+        /*if('serviceWorker' in navigator){
+        	console.log('CLIENT: service worker registration in progress.');
+        	navigator.serviceWorker.register('https://cdn.css-tricks.com/service-worker.js').then(function() {
+        		console.log('CLIENT: service worker registration complete.');
+        	}, function() {
+        		console.log('CLIENT: service worker registration failure.');
+        	});
+        }else{
+        	console.log('CLIENT: service worker is not supported.');
+        }*/
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+
+        /****************/
+    </script>
+</html>
+

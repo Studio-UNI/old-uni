@@ -1,0 +1,41 @@
+.header{
+    padding:$s-s*1.5;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    width: 100%;
+    align-items:center;
+    justify-content:space-between;
+    z-index:5;
+    background: rgba(248, 248, 248, 0.95);
+    
+    &--navOpen{
+        background:transparent;
+        >.logoUni{
+            opacity:1 !important;
+            h2{
+                transform:translateX(0px) !important;
+                opacity:1 !important;
+            }
+        }
+        .menu{
+            .burgerMenu{
+                opacity:1;
+                >div{
+                    background: $black;
+                }
+                >div:nth-child(1){
+                    transform:rotate(45deg) translate3d(0px, 4px,0px);
+                }
+                >div:nth-child(2){
+                    width:80%;
+                    transform:rotate(-45deg) translate3d(1px, -4px,0px);
+                }
+                >span{
+                    display:block;
+                }
+            }
+        }
+    }
+}

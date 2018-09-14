@@ -1,0 +1,18 @@
+.button{
+    padding: $s-s $s-l;
+    margin-top:$s-s;
+    display:inline-block;
+    font-family: $main-font-family;
+    font-size: $font-size-xs;
+    line-height:$line-height-xs;
+    font-weight:400;
+    cursor:pointer; 
+    transition: $quick-transition;
+}
+
+a.button{
+    color:$black;
+    &:hover{
+        text-decoration: none;
+    }
+}

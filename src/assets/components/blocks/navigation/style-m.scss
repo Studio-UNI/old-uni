@@ -1,0 +1,79 @@
+.mainNav {
+    clip-path: circle(0% at calc(100% - 72px) 54px );
+    transition: clip-path .6s ease-in-out, opacity .2s ease-in .6s;
+        &__decoration{
+            >div:nth-child(1){
+                display:block;
+                svg{
+                    height:35vh;
+                    path{
+                        fill:$white;
+                        opacity:.6;
+                    }
+                }
+            }
+            >div:nth-child(2){
+                display:block;
+                position:absolute;
+                bottom:-5vh;
+                left:20vw;
+                svg{
+                    height:20vh;
+                    rect{
+                        fill:$white;
+                        opacity:.6;
+                    }
+                }
+            }
+        }
+        &__bg{
+            display:flex;
+            >div:first-child{
+                display:block;
+                padding-top:25vh;
+                height:100%;
+                width:calc(100%/2);
+                padding: 25vh $s-xxl 0 $s-xxl;
+                background:$lightgrey;
+            }
+            >div:last-child{
+                width:calc(100%/2);
+                padding-left:$s-xxl;
+            }
+        }
+        &__navigation{
+            padding-left:$s-l;
+            padding-top:25vh;
+        }
+        &__lastProject{
+            position:relative;
+            z-index:3;
+            padding-top:25vh;
+            height:100%;
+            width:calc(100%/2);
+            padding: 25vh $s-xxl 0 $s-xxl;
+            display:flex;
+            justify-content:center;
+            >div{
+                max-width:600px;
+            }
+        }
+        &__navigation{
+            width:calc(100%/2);
+            padding-left:$s-xxl;
+            >div{
+                margin-left:10%;
+            }
+        }
+    }
+
+
+// mainNav ouverte
+.mainNav {
+    &.open {
+        clip-path: circle(200% at calc(100% - 72px) 54px );
+
+        opacity:1;
+        transition: clip-path ease-in-out .6s, opacity .1s ease-in;
+    }
+}
